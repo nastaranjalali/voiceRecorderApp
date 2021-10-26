@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+.root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.cassetteGif {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  object-fit: fill;
+  filter: brightness(75%);
+}
+.btnContainer {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn {
+  border: none;
+  width: 25%;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: azure;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: 300ms;
+}
+.start {
+  background-color: #04857e;
+  margin: 10px;
+}
+.start:hover {
+  background-color: #026d68;
+}
+.stop {
+  background-color: #e6584c;
+}
+.stop:hover {
+  background-color: #af382d;
+}
+.play {
+  background-color: #38363a;
+}
+.play:hover {
+  background-color: #242325;
+}
